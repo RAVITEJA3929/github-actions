@@ -13,7 +13,7 @@ jobs:
     runs-on:  ubuntu-latest
     if: github.event_name == 'pull_request'
     steps:
-      - name: this will run on if condition with main branch
+      - name: this will run on if condition with main branch with main branch
         run: echo "if pull requests works it will execute"
 
   deploy:
