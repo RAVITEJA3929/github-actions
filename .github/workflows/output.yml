@@ -1,4 +1,4 @@
-name: if-condition-job-level
+name: if-conditionjoblevel
 on:
   pull_request:
     types:
