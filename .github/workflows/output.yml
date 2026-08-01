@@ -1,16 +1,12 @@
-name: if-condition-wf
+name: if-condition-job-level
 on:
-  push:
-    branches:
-      - main
-      - test
+  pull_request:
+    types:
+      - opened
+      - synchronize
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: this is using the and condition
-        if: github.ref =='refs/heads/main' && github.actor =='RAVITEJA3929'
-        run: echo "this is will run AND main push happen"
-      - name: this is run manuall
-        run: echo "this is run manual"
-      
+      - name: this if condition job level
+        run: echo "this will run the job level"
