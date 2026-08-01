@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: this is using the if condition
+      - name: this is using the and condition
         if: github.ref =='refs/heads/main' && github.actor =='RAVITEJA3929'
         run: echo "this is will runif main push happen"
       - name: this is run manuall
