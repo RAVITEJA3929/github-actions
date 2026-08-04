@@ -4,10 +4,8 @@ jobs:
   job-1:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo "Step 1"
-          hostname
-          date
-          hostname
-          free -h
-          df -h
+      - run: hostname
+      - run: date
+      - run: hostname
+      - run: free -h
+      - run: df -h
